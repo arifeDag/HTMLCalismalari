@@ -4,10 +4,12 @@
 <head>
     <script src="jquery-3.6.0.js"></script>
 
-    <script>
+    <script type="text/javascript">
 
         function topla(sayi1, sayi2) {
+
             var toplam = sayi1 + sayi2;
+            //$('h1').text(toplam);
             alert(toplam);
 
         }
@@ -24,6 +26,7 @@
     <title></title>
 </head>
 <body>
-    <input type="button" value="2 sayiyi topla "onclick="1987,3567"/>
+    <input type="button" value="2 sayiyi topla "onclick="topla(1987,3567)"/>
+    <h1></h1>
 </body>
 </html>
