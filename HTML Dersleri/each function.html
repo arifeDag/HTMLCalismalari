@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('input').click(function () {
+                $('li').each(function () {
+                    //$('textarea').append($(this).text() + " ");
+
+                    var motorismi = $(this).text() + " ";
+                    $('textarea').append(motorismi);
+
+
+                });
+
+
+            });
+
+
+        });
+
+
+    </script>
+
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <input type="button" value="Birleştir" />
+
+    <ul>
+        <li>Honda</li>
+        <li>Kawasaki</li>
+        <li>Yamaha</li>
+        <li>suzuki</li>
+        <li>Bmw</li>
+        <li>Vespa</li>
+        <li>Ducati</li>
+        <li>Ktm</li>
+    </ul>
+    <br />
+    <textarea rows="5" cols="50"></textarea>
+
+</body>
+</html>

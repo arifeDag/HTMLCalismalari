@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.zorunlu').css("border", "2px solid red");
+
+            $('input').focus(function () {
+                $(this).css("background-color", "red");
+
+
+            });
+
+            $('input').blur(function () {
+                $(this).css("background-color", "transparent");
+
+            });
+
+            $('#textadres').focus(function () {
+                $(this).css("background-color", "blue");
+
+
+            });
+
+            $('#textadres').blur(function () {
+                $(this).css("backgrouund-color", "transparent");
+
+
+            });
+
+
+        });
+    </script>
+
+    <meta charset="utf-8" />
+    <title>jqery ögreniyorum</title>
+
+
+</head>
+<body>
+    Adınız:
+    <br />
+    <input type="text" />
+    <br />
+    Soyadınız:
+    <br />
+    <input type="text" class="zorunlu" />
+    <br />
+    Adres:
+    <br />
+    <textarea rows="10" cols="20" id="textadres" class="zorunlu"></textarea>
+
+</body>
+</html>
