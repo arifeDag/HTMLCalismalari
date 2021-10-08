@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').change(function () {
+                 
+                var secilendeger = $('select').val();
+                if (secilendeger == "1") {
+                    $('body').css("background-image", "url('amblem/fenerbahce.jpg')");
+
+                }
+                else if (secilendeger == "2") {
+
+                    $('body').css("background-image", "url('amblem/galatasaray.jpg')");
+
+                }
+                else if (secilendeger == "3") {
+
+                    $('body').css("background-image", "url('amblem/besiktas.jpg')");
+                }
+                else if (secilendeger == "4") {
+
+                    $('body').css("background-image", "url('amblem/trabzonspor.jpg')");
+                }
+                else if (secilendeger == "5") {
+
+                    $('body').css("background-image", "url('amblem/sivasspor.jpg')");
+
+                    
+                    $('body').css("color", "white')");
+
+                }
+                else {
+
+                    $('body').css("background-image", null);
+                    $('body').css("background-color", "red");
+
+                }
+
+
+
+            });
+
+
+        });
+
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <strong>Hangi Takımlısınız ?</strong>
+    <select>
+        <option value="1">Fenerbahce</option>
+        <option value="2">Galatasaray</option>
+        <option value="3">Beşiktaş</option>
+        <option value="4">Trabzonspor</option>
+        <option value="5">Sivasspor</option>
+        <option value="6">Boş</option>
+    </select>
+
+</body>
+</html>
